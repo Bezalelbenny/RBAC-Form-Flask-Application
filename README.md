@@ -8,19 +8,19 @@ The project highlights authentication, authorization, session management, and CR
 -----------------------------------------------------------------------------------------------------------------------------
 Features
 -----------------------------------------------------------------------------------------------------------------------------
-User Authentication (Login & Logout)
-Role-Based Access Control (RBAC)
-Session Management
-Create, Read, Update and Delete (CRUD) Operations
-SQLite Database Integration
-SQLAlchemy ORM
-Flask-WTF Form Validation
-Responsive User Interface
-Preloaded User Accounts
-Automatic Database Initialization
-Permission-Based Navigation
-Secure Route Protection
-Sample Tasks Loaded Automatically
+*User Authentication (Login & Logout)
+*Role-Based Access Control (RBAC)
+*Session Management
+*Create, Read, Update and Delete (CRUD) Operations
+*SQLite Database Integration
+*SQLAlchemy ORM
+*Flask-WTF Form Validation
+*Responsive User Interface
+*Preloaded User Accounts
+*Automatic Database Initialization
+*Permission-Based Navigation
+*Secure Route Protection
+*Sample Tasks Loaded Automatically
 -----------------------------------------------------------------------------------------------------------------------------
 User Roles
 -----------------------------------------------------------------------------------------------------------------------------
