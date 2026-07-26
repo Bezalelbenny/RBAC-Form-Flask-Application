@@ -39,7 +39,7 @@ viewer	viewer123:Viewer
 Screen Shots
 -----------------------------------------------------------------------------------------------------------------------------
 ![pic1](https://github.com/Bezalelbenny/RBAC-Form-Flask-Application/blob/6001282596e1581d89c57e0b44f168d4c51e27aa/brave_screenshot.png)
-![pic2](https://github.com/Bezalelbenny/RBAC-Form-Flask-Application/blob/6001282596e1581d89c57e0b44f168d4c51e27aa/brave_screenshot.png)
+![pic2](https://github.com/Bezalelbenny/RBAC-Form-Flask-Application/blob/3e60fa03579f67fc43529a797e588e37296e55b3/brave_screenshot%20(2).png)
 ![pic3](https://github.com/Bezalelbenny/RBAC-Form-Flask-Application/blob/6001282596e1581d89c57e0b44f168d4c51e27aa/brave_screenshot.png)
 
 
