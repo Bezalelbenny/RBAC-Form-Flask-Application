@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div style="padding: 20px; font-family: sans-serif;">
+        <h2>Dashboard</h2>
+        <p>User: <b>{{ user }}</b> | Role: <span style="color: blue;"><b>{{ role }}</b></span> | <a href="{{ url_for('logout') }}">Logout</a></p>
+        <hr>
+
+        {% if role in ['Admin', 'Editor'] %}
+            <a href="{{ url_for('create_task') }}" class="btn-green">+ Create New Task</a><br><br>
+        {% endif %}
+
+        <table border="1" cellpadding="8" cellspacing="0" style="width: 100%">
+            <tr style="background: #eee">
+                <th>ID</th><th>Title</th><th>Description</th><th>Author</th><th>Actions</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+                <td>{{ task.author }}</td>
+                <td>
+                    {% if role in ['Admin', 'Editor'] %}
+                        <a href="{{ url_for('update_task', id=task.id) }}">Edit</a>
+                    {% else %}
+                        <span style="color:gray">No Edit Right</span>
+                    {% endif %}
+                    |
+                    {% if role == 'Admin' %}
+                        <form action="{{ url_for('delete_task', id=task.id) }}" method="POST" style="display:inline;">
+                            <input type="submit" value="Delete" onclick="return confirm('Delete item?')">
+                        </form>
+                    {% else %}
+                        <span style="color:gray">No Delete Right</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
