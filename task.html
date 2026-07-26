@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="box">
+        <h2>{{ title }}</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <p>{{ form.title.label }}<br> {{ form.title(style="width:100%") }}</p>
+            <p>{{ form.description.label }}<br> {{ form.description(style="width:100%") }}</p>
+            <p>{{ form.submit() }} | <a href="{{ url_for('dashboard') }}">Cancel</a></p>
+        </form>
+    </div>
+</body>
+</html>
